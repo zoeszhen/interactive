@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/paper.min.css">
+    <link rel="stylesheet" href="./css/beemuse.min.css">
+</head>
+
+<body ng-app="food-store" class="background_body">
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="http://localhost:8080/"><img src="img/logo.png" class="navbar-brand"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- <ul class="nav navbar-nav navbar-custom">
+                    <li class="active"><a href="http://localhost:8080/">Home<span class="sr-only">(current)</span></a></li>
+                </ul> -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div id="test_body" ng-controller="SliderController">
+        <form id="slide-form" ng-submit="submit()">
+            <div class="container">
+                <div class="center-block head">
+                    <div class="text-center textCustom" id="slogan">
+                        <h1 id="main-heading">Do not know what to eat?</h1>
+                        <p id="main-para" class="lead">Give us a minte and try the test we will tell you!</p>
+                        <button class="btn btn-default btn-xlarge" id="try-btn" ng-click="submit()" role="button">Try the test</button>
+                        <br>
+                    </div>
+                </div>
+                <div class=" text-center row hide" id="picture-frame">
+                    <div class="span9 ribbon ribbon-both ribbon-set ribbon-in-out text-center">
+                        <div class="ribbon-stitch">
+                            <div class="ribbon-fabric">
+                                <p>Press &Rightarrow; to checek the next picture</p>
+                            </div>
+                            <div class="ribbon-top-left"></div>
+                            <div class="ribbon-bottom-left"></div>
+                            <div class="ribbon-center-right"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img class="paper paper-curl picture-show span9" ng-src="{{imageurl}}" id="image-slider" name="imageurl" ng-model="imageurl">
+                    </div>
+                </div>
+                <div class="center-block head">
+                    <input class="center-block head hide" type="submit" id="submit">
+                </div>
+            </div>
+            <form>
+    </div>
+    <div class="container ">
+    <div id="foot" class=" hide row text-center">
+        
+        <div class="ribbon ribbon-both ribbon-in span9 text-center container">
+            <div class="ribbon-stitch">
+                <div class="ribbon-fabric"><p>Today you may like</p></div>
+                <div class="ribbon-top-right"></div>
+                <div class="ribbon-bottom-right"></div>
+                <div class="ribbon-top-left"></div>
+                <div class="ribbon-bottom-left"></div>
+            </div>
+        </div>
+        <div class=" text-center picture-show container">
+            <img class="text-center paper paper-curl picture-show" id="result-pic">
+        
+      
+            <iframe class="text-center" id="gp">
+            </iframe>
+       
+      
+       </div>
+    </div></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+    <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="./js/magnific.js"></script>
+    <script type="text/javascript" src="./js/jquery.sequence-min.js"></script>
+    <script type="text/javascript" src="./js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/jquery.flexisel.js"></script>
+</body>
+
+</html>

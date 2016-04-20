@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/angular-1.5.2/angular.min.js"></script>
+    <script type="text/javascript" src="./js/angular-1.5.2/angular-resource.min.js"></script>
+    <script type="text/javascript" src="./js/angular-1.5.2/angular-route.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,700' rel='stylesheet' type='text/css'>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="./css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" id="theme" href="./css/theme1.css" type="text/css" />
+
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/jquery.bxslider.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="./css/sequence-slider.css" />
+
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+
+    <link rel="stylesheet" href="./css/color.switch.css" type="text/css" />
+
+    <link rel="stylesheet" href="./css/top.css" type="text/css" />
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+
+  </head>
+
+  <body ng-app="food-store">
+
+    <div class="button-top" id="top-bt">
+      <a href="#about"><i class="fa fa-sort-desc fa-3x"></i></a>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" id="navigation">
+            <li><a href="http://localhost:8080">Food Items</a></li>
+            <li><a href="http://localhost:8080/calibrate">Caliberate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <div id="portfolio" ng-controller="CalibrationController">
+    <form id="calibration-form" ng-submit="submit()">
+    <div class="container">
+      <div class="center-block head">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+         <h1 class="d-grey">Calibrate</h1>
+           <hr class="head-border-grey">
+        </div>
+      </div>
+      <div class="filter-list">
+        <ul class="nav nav-pills">
+            <a href="http://localhost:8080/startcalibration" class="avg button">Start Calibration</a>
+            <br>
+            <input type="submit" value="Stop Calibration">
+        </ul>
+        <ul class="nav nav-pills">
+            <br>
+            <!-- <a href="http://localhost:8080/stopcalibration" class="d-grey">Stop Calibration</a> -->
+            <p class="avg" id="average"></p>
+            <!-- <input type="text" class="d-grey" id="average"></input> -->
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <form>
+
+</div>
+
+  <!-- <div id="foot">
+    <div class="container">
+      <iframe src="https://www.google.com/maps/embed/v1/place?q=italian+resturants,
+      &zoom=17
+      &key=AIzaSyAWN7yD_HJi7GB7eQuvkA8pIyd5xR9QBPY">
+  </iframe>
+    </div>
+  </div> -->
+</div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/functions.js"></script>
+  <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="./js/magnific.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.sequence-min.js"></script>
+  
+  <script type="text/javascript" src="./js/nbw-parallax.js"></script>
+  <script type="text/javascript" src="./js/jquery.inview.js"></script>
+
+  <script type="text/javascript" src="./js/smoothscroll.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.sticky.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.style-switcher.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+
+
+  <script type="text/javascript" src="./js/jquery.flexisel.js"></script>
+
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "portfolio-server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "nodemailer": "^2.3.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassanabbas9/abbas-portfolio.git"
+  },
+  "author": "Hassan Abbas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassanabbas9/abbas-portfolio/issues"
+  },
+  "homepage": "https://github.com/hassanabbas9/abbas-portfolio#readme"
+}

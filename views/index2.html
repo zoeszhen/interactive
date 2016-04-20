@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"  ng-app="Demo">
+<head>
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin = "anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/functions.js"></script>
+  <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="./js/magnific.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.sequence-min.js"></script>
+  
+  <script type="text/javascript" src="./js/nbw-parallax.js"></script>
+  <script type="text/javascript" src="./js/jquery.inview.js"></script>
+
+  <script type="text/javascript" src="./js/smoothscroll.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.sticky.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.style-switcher.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+
+
+  <script type="text/javascript" src="./js/jquery.flexisel.js"></script>
+	<!-- <script src = "js/angular.min.js"></script>
+	<script src = "js/angular-route.min.js" ></script>
+  <script src = "js/javascript.js"></script>
+  <script src = "bower_components/angular-simple-slideshow/angular-simple-slideshow.js"></script> -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/ngFader.css">
+  <script src="js/ngFader.js"></script> -->
+	<title>HOME PAGE</title>
+</head>
+<body ng-app="food-store">
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="col-"></div>
+    <div class="navbar-header">
+      <a href="http://localhost:8080/"><img src="css/img/logo.png" class="navbar-brand" ></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-custom">
+        <li class="active"><a href="http://localhost:8080/">Home<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class = "container" id="about" ng-controller="SliderController">
+  <form id="slide-form" ng-submit="submit()">
+    <div class = "text-center textCustom" id = "slogan">
+      <h1 id="main-heading">Do not know what to eat?</h1>
+      <p id="main-para" class="lead">Give us a minte and try the test we will tell you! Press Right arrow key to start !</p><br> 
+    </div>
+    <div class="center-block head hide" id="picture-frame">
+      <ul>
+        <li>
+          <img class="center-block" height="300" width="800" ng-src="{{imageurl}}" id="image-slider" name="imageurl" ng-model="imageurl">
+        </li>
+      </ul>
+    </div>
+    <div class="center-block head">
+           <input class="center-block head hide" type="submit" id="submit" id="slide-show" value="Try the Test">
+    </div>
+  <form>
+</div>
+</body>
+</html>
