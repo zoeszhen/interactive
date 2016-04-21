@@ -33,11 +33,12 @@ iframe{
   height: 100%;
 }
 .picture-show{
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 .background_body{
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: 800px 400px;
 }
 .navbar-inverse {
   background-color: #ffffff;
