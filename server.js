@@ -8,6 +8,7 @@ var path = require('path');
 var qs = require('querystring');
 var http = require("http");
 var url = require('url');
+var shuffle = require('shuffle-array');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 
@@ -19,6 +20,7 @@ app.get('/',function(req,res){
 
 app.get('/files',function(req,res){
   var files = _getAllFilesFromFolder(__dirname + "/public/food-images");
+  shuffle(files);
   res.setHeader('Content-Type', 'text/html');
   res.writeHead(res.statusCode);
   res.write(files.toString());
